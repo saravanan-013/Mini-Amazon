@@ -22,7 +22,7 @@ if (process.env.NODE_ENV == 'production') {
         res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'))
     });
 }
-
+app.get("/",res.send())
 app.listen(process.env.PORT, () => {
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
 });
