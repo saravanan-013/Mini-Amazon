@@ -28,3 +28,4 @@ app.get("/",(req,res)=>res.send("endpoints are working"))
 app.listen(process.env.PORT, () => {
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
 });
+// i have added endpoint
