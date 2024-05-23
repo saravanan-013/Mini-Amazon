@@ -23,7 +23,7 @@ if (process.env.NODE_ENV == 'production') {
         res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'))
     });
 }
-//added api endpoint
+//added api endpoint are okay
 app.get("/",(req,res)=>res.send("endpoints are working"))
 app.listen(process.env.PORT, () => {
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
